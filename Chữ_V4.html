@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>Nguyễn Văn Đức (ADMIN)</title>
+    <style>
+        *{
+    /* Initialize and cancel the inner and outer margins of page elements */
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* 100% Window Height */
+    height: 100vh;
+    background-color: #f2be45;
+    /* Relative positioning */
+    position: relative;
+    /* Execute the background color change animation: Animation name Duration Linear Stay at the last frame */
+    animation: changeBg 2.5s linear forwards;
+}
+/* Add congratulations text */
+.container::before,
+.container::after{
+    /* Absolute positioning */
+    position: absolute;
+    top: 5%;
+    color: #f2be45;
+    font-size: 70px;
+    font-weight: bold;
+    /* Perform animation showing congratulations text */
+    animation: showText 2.5s linear forwards;
+}
+.container::before{
+    content: "NVĐ";
+    left: 5%;
+    /* Tilt 15 degrees along the X axis */
+    transform: skewX(15deg);
+}
+.container::after{
+    content: "ADMIN";
+    right: 5%;
+    /* Tilt along the X axis -15 degrees */
+    transform: skewX(-15deg);
+}
+.letter{
+    font-size: 160px;
+    font-weight: bold;
+    color: #725e82;
+    /* Capitalize */
+    text-transform: uppercase;
+    /* Absolute fixed positioning */
+    position: fixed;
+}
+.letter span{
+    /* Flexible layout horizontal and vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 200px;
+}
+.letter.letter1{
+    left: calc(50% - 270px);
+    top: -400px;
+    /* Execute animation: animation name duration acceleration then deceleration */
+    animation: letter1Animate 2.5s ease-in-out;
+}
+.letter.letter2{
+    left: calc(50% - 90px);
+    top: -200px;
+    /* Execute animation: animation name duration acceleration then deceleration */
+    animation: letter2Animate 2.5s ease-in-out;
+}
+.letter.letter3{
+    left: calc(50% + 90px);
+    top: -800px;
+    /* Execute animation: animation name duration acceleration then deceleration */
+    animation: letter3Animate 2.5s ease-in-out;
+}
+.letter .check{
+    color: #f2be45;
+}
+
+/* Defining Animation */
+/* Changing the background color */
+@keyframes changeBg {
+    0%{
+        background-color: #f2be45;
+    }
+    100%{
+        background-color: #725e82;
+    }
+}
+/* Scrolling animation of the first letter */
+@keyframes letter1Animate {
+    0%{
+        top: -2000px;
+    }
+    100%{
+        top: -400px;
+        color: #725e82;
+    }
+}
+/* Scroll animation of the second letter */
+@keyframes letter2Animate {
+    0%{
+        top: -4000px;
+    }
+    100%{
+        top: -200px;
+        color: #725e82;
+    }
+}
+/* Scrolling animation of the third letter */
+@keyframes letter3Animate {
+    0%{
+        top: -3000px;
+    }
+    100%{
+        top: -800px;
+        color: #725e82;
+    }
+}
+/* Display congratulations text */
+@keyframes showText {
+    0%{
+        color: #f2be45;
+    }
+    98%{
+        color: #725e82;
+        text-shadow: none;
+    }
+    100%{
+        color: #fff;
+        /* Text Shadow */
+        text-shadow: 5px 5px 0 #f2be45;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="letter letter1">
+            <span>a</span>
+            <span>b</span>
+            <span>c</span>
+            <span>d</span>
+            <span class="check">I</span>
+            <span>f</span>
+            <span>g</span>
+            <span>h</span>
+            <span>i</span>
+            <span>j</span>
+            <span>k</span>
+            <span>l</span>
+            <span>m</span>
+            <span>n</span>
+            <span>o</span>
+            <span>p</span>
+            <span>q</span>
+            <span>r</span>
+            <span>s</span>
+            <span>t</span>
+            <span>u</span>
+            <span>v</span>
+            <span>w</span>
+            <span>x</span>
+            <span>y</span>
+            <span>z</span>
+        </div>
+        <div class="letter letter2">
+            <span>a</span>
+            <span>b</span>
+            <span>c</span>
+            <span class="check">❤️</span>
+            <span>e</span>
+            <span>f</span>
+            <span>g</span>
+            <span>h</span>
+            <span>i</span>
+            <span>j</span>
+            <span>k</span>
+            <span>l</span>
+            <span>m</span>
+            <span>n</span>
+            <span>o</span>
+            <span>p</span>
+            <span>q</span>
+            <span>r</span>
+            <span>s</span>
+            <span>t</span>
+            <span>u</span>
+            <span>v</span>
+            <span>w</span>
+            <span>x</span>
+            <span>y</span>
+            <span>z</span>
+        </div>
+        <div class="letter letter3">
+            <span>a</span>
+            <span>b</span>
+            <span>c</span>
+            <span>d</span>
+            <span>e</span>
+            <span>f</span>
+            <span class="check">U</span>
+            <span>h</span>
+            <span>i</span>
+            <span>j</span>
+            <span>k</span>
+            <span>l</span>
+            <span>m</span>
+            <span>n</span>
+            <span>o</span>
+            <span>p</span>
+            <span>q</span>
+            <span>r</span>
+            <span>s</span>
+            <span>t</span>
+            <span>u</span>
+            <span>v</span>
+            <span>w</span>
+            <span>x</span>
+            <span>y</span>
+            <span>z</span>
+        </div>
+    </div>
+</body>
+
+</html>
